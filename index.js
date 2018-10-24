@@ -64,24 +64,28 @@
   }
 
   async function melody() {
-    const whole = 0.5;
-    await playNote('E4', whole / 2);
+    const whole = 1;
+    await playNote('A#4', whole);
+    await playNote('F5', whole);
+    await playNote('D#5', whole / 8);
     await delay(whole / 16);
-    await playNote('F4', whole / 2);
+    await playNote('D5', whole / 8);
+    await playNote('C5', whole / 8);
     await delay(whole / 16);
-    await playNote('G4', whole / 2);
+    await playNote('A#5', whole);
+    await playNote('F5', whole / 2);
+    await playNote('D#5', whole / 8);
     await delay(whole / 16);
-    await playNote('F4', whole / 2);
+    await playNote('D5', whole / 8);
+    await playNote('C5', whole / 8);
     await delay(whole / 16);
-    await playNote('E4', whole / 2);
+    await playNote('A#5', whole);
+    await playNote('F5', whole / 2);
+    await playNote('D#5', whole / 8);
     await delay(whole / 16);
-    await playNote('D4', whole / 2);
-    await delay(whole / 16);
-    await playNote('E4', whole / 4);
-    await playNote('F4', whole / 4);
-    await playNote('E4', whole / 4);
-    await playNote('D4', whole / 4);
-    await playNote('E4', whole);
+    await playNote('D5', whole / 8);
+    await playNote('D#5', whole / 8);
+    await playNote('C5', whole);
   }
 
   window.notes = notes;
